@@ -3,22 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informações Pessoais</title>
+    <title>Formulário - Capela Santo Antônio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Preencha nosso Formulário</h1>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Capela Santo Antônio</h1>
+            <p>Vila Paulista - Rio Claro/SP</p>
+        </div>
+    </header>
+
     <div class="button-container">
-      <button onclick="window.location.href='inicio.html'" class="nav-button">Início e Sobre Nós</button>
-      <button onclick="window.location.href='formulario.html'" class="nav-button">Formulário</button>
-      <button onclick="window.location.href='galeria.html'" class="nav-button">Galeria</button>
-     <button onclick="window.location.href='agenda.html'" class="nav-button">Agenda</button>>
+        <a href="inicio.html" class="nav-button">Início</a>
+        <a href="sobrenos.html" class="nav-button">Sobre Nós</a>
+        <a href="formulario.html" class="nav-button">Formulário</a>
+        <a href="galeria.html" class="nav-button">Galeria</a>
+        <a href="agenda.html" class="nav-button">Agenda</a>
     </div>
 
-<footer>
-  <div class="footer-content">
-    <p>&copy; 2025 Capela Santo Antônio. Todos os direitos reservados.
-Endereço: R. P 4, 901 - Vila Paulista, Rio Claro - SP, 13506-855</p>
-  </div>
-</footer>
+    <div class="container">
+        <main>
+            <h1>Preencha nosso Formulário</h1>
+            <p>Utilize este formulário para entrar em contato conosco, inscrever-se em atividades ou compartilhar suas intenções de oração.</p>
+            
+            <form id="infoForm">
+                <div class="form-group">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="contato">Contato Geral</option>
+                        <option value="oracao">Pedido de Oração</option>
+                        <option value="catequese">Informações sobre Catequese</option>
+                        <option value="batismo">Informações sobre Batismo</option>
+                        <option value="casamento">Informações sobre Casamento</option>
+                        <option value="eventos">Informações sobre Eventos</option>
+                        <option value="voluntariado">Trabalho Voluntário</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Deseja receber nossas novidades?</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="novidades" name="novidades" value="sim">
+                        <label for="novidades">Sim, desejo receber e-mails com novidades e eventos</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="nav-button" style="width: 100%;">Enviar</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Capela Santo Antônio. Todos os direitos reservados.</p>
+            <p>Endereço: R. P 4, 901 - Vila Paulista, Rio Claro - SP, 13506-855</p>
+            <p>Telefone: (19) XXXX-XXXX | E-mail: contato@capelasantantonio.com.br</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('infoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Formulário enviado com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
