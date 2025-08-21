@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+<h1>Imagens Dinâmica</h1>
+<picture>
+    <source media="(max-width: 400px)" srcset="debiloideP.png" type="image/png">
+    <img src="debiloideP.png" alt="A imagem flexível funciona">
+
+    <source media="(max-width: 800px)" srcset="debiloideM.png" type="image/png">
+    <img src="debiloideM.png" alt="A imagem flexível funciona">
+
+    <source media="(min-width: 800px)" srcset="debiloideG.png" type="image/png">
+    <img src="debiloideG.png" alt="A imagem flexível funciona">
+</picture>    
+</body>
+</html>
