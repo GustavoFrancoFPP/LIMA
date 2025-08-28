@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #000;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #ff4d8d, #6ce0ff);
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header h3 {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #ffcc00;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #111;
+    border: 2px solid #ff4d8d;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 15px;
+    width: 280px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255,77,141,0.7);
+    border-color: #6ce0ff;
+}
+
+h2 {
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.7em;
+    line-height: 1.2em;
+    color: #6ce0ff;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    max-width: 90%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+    color: #ffcc00;
+    border-top: 2px solid #6ce0ff;
+}
+
+/* Código para deixar responsivo */
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        width: 90%;
+    }
+}
