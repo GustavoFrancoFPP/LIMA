@@ -1,219 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitrine 2025: Moda, Essência e Estilo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="loja.css">
+    <link rel="shortcut icon" href="IMGloja/favicon (4).ico" type="image/x-icon">
 </head>
+
 <body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>Vitrine<span>2025</span></h1>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#categories">Categorias</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="#cart" class="cart-btn">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-                <button class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
+    <header>
+        <h1>Vitrine 2025</h1>
+        <nav>
+            <ul>
+                <li><a href="loja.html">Início</a></li>
+                <li> <a href="carrinho.html"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+</li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Banner Principal -->
     <section class="banner">
-        <div class="container">
-            <div class="banner-content">
-                <h2>Moda, Essência e Estilo</h2>
-                <p>Descubra a nova coleção 2025 com peças exclusivas</p>
-                <a href="#products" class="btn-primary">Ver Produtos</a>
+        <h2>Moda, Essência e Estilo</h2>
+        <p>Descubra as tendências que vão marcar 2025</p>
+        <button>Saiba Mais</button>
+    </section>
+
+    <section class="produtos">
+        <h2>Destaques</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="IMGloja/receba.jpg" alt="Produto 1">
+                <h3>Luva de Pedreiro Boneco</h3>
+                <p>Boneco Receba!</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+            </div>
+            <div class="card">
+                <img src="IMGloja/perfume.jpg" alt="Produto 2">
+                <h3>Perfume Jair</h3>
+                <p>Perfume amadeirado do Bolsonaro</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+            </div>
+            <div class="card">
+                <img src="IMGloja/labubu.jpg" alt="Produto 3">
+                <h3>Labubu</h3>
+                <p>Labubu Acessório</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+            </div>
+            <div class="card">
+                <img src="IMGloja/oculos.jpg" alt="Produto 4">
+                <h3>Oculos Oakley</h3>
+                <p>Oculos Oakley sem grau</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+            </div>
+            <div class="card">
+                <img src="IMGloja/bolsa.avif" alt="Produto 5">
+                <h3>Bolsa</h3>
+                <p>Bolsa Channel Original Importada</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+            </div>
+            <div class="card">
+                <img src="IMGloja/boobie bom.webp" alt="Produto 6">
+                <h3>Boobie Goods</h3>
+                <p>Caderno de coloria Boobie Goods</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+            </div>
+            <div class="card">
+                <img src="IMGloja/ben10.jpg" alt="Produto 7">
+                <h3>Relogio Benio</h3>
+                <p>Relógio Adulto Ben 10</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
+            </div>
+            <div class="card">
+                <img src="IMGloja/idolo.jpg" alt="Produto 8">
+                <h3>Fantasia Capitão Pátria</h3>
+                <p>Fantasia Qualidade Impecável</p>
+                <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+
             </div>
         </div>
     </section>
 
-    <!-- Filtros de Categoria -->
-    <section id="categories" class="categories">
-        <div class="container">
-            <h2>Categorias</h2>
-            <div class="category-filters">
-                <a href="#all" class="filter-btn active">Todos</a>
-                <a href="#clothing" class="filter-btn">Roupas</a>
-                <a href="#perfumes" class="filter-btn">Perfumes</a>
-                <a href="#accessories" class="filter-btn">Acessórios</a>
-                <a href="#instruments" class="filter-btn">Instrumentos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Produtos -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2>Nossos Produtos</h2>
-            <div class="products-grid">
-                <!-- Produto 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://placehold.co/300x400/4c5270/ffffff?text=Vestido+Elegante" alt="Vestido Elegante">
-                    </div>
-                    <div class="product-info">
-                        <span class="category">Roupas</span>
-                        <h3>Vestido Elegante</h3>
-                        <p>Vestido de festa com detalhes em renda.</p>
-                        <div class="product-price">R$ 299,90</div>
-                        <a href="#cart" class="add-to-cart">Adicionar ao Carrinho</a>
-                    </div>
-                </div>
-
-                <!-- Produto 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://placehold.co/300x400/4c5270/ffffff?text=Perfume+Exclusivo" alt="Perfume Exclusivo">
-                    </div>
-                    <div class="product-info">
-                        <span class="category">Perfumes</span>
-                        <h3>Perfume Exclusivo</h3>
-                        <p>Fragrância única com notas amadeiradas.</p>
-                        <div class="product-price">R$ 459,90</div>
-                        <a href="#cart" class="add-to-cart">Adicionar ao Carrinho</a>
-                    </div>
-                </div>
-
-                <!-- Produto 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://placehold.co/300x400/4c5270/ffffff?text=Bolsa+Premium" alt="Bolsa Premium">
-                    </div>
-                    <div class="product-info">
-                        <span class="category">Acessórios</span>
-                        <h3>Bolsa Premium</h3>
-                        <p>Bolsa em couro legítimo com acabamento impecável.</p>
-                        <div class="product-price">R$ 599,90</div>
-                        <a href="#cart" class="add-to-cart">Adicionar ao Carrinho</a>
-                    </div>
-                </div>
-
-                <!-- Produto 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://placehold.co/300x400/4c5270/ffffff?text=Relógio+Moderno" alt="Relógio Moderno">
-                    </div>
-                    <div class="product-info">
-                        <span class="category">Acessórios</span>
-                        <h3>Relógio Moderno</h3>
-                        <p>Relógio inteligente com tecnologia de ponta.</p>
-                        <div class="product-price">R$ 799,90</div>
-                        <a href="#cart" class="add-to-cart">Adicionar ao Carrinho</a>
-                    </div>
-                </div>
-
-                <!-- Produto 5 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://placehold.co/300x400/4c5270/ffffff?text=Violão+Acústico" alt="Violão Acústico">
-                    </div>
-                    <div class="product-info">
-                        <span class="category">Instrumentos</span>
-                        <h3>Violão Acústico</h3>
-                        <p>Violão de alta qualidade com som encorpado.</p>
-                        <div class="product-price">R$ 899,90</div>
-                        <a href="#cart" class="add-to-cart">Adicionar ao Carrinho</a>
-                    </div>
-                </div>
-
-                <!-- Produto 6 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://placehold.co/300x400/4c5270/ffffff?text=Óculos+Estilosos" alt="Óculos Estilosos">
-                    </div>
-                    <div class="product-info">
-                        <span class="category">Acessórios</span>
-                        <h3>Óculos Estilosos</h3>
-                        <p>Óculos de sol com proteção UV e armação moderna.</p>
-                        <div class="product-price">R$ 349,90</div>
-                        <a href="#cart" class="add-to-cart">Adicionar ao Carrinho</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Carrinho Simulado -->
-    <section id="cart" class="cart-section">
-        <div class="container">
-            <h2>Carrinho de Compras</h2>
-            <div class="cart-message">
-                <i class="fas fa-info-circle"></i>
-                <p>Funcionalidade de carrinho será implementada com JavaScript em breve.</p>
-                <p>Enquanto isso, entre em contato conosco para finalizar sua compra!</p>
-            </div>
-            <div class="cart-actions">
-                <a href="#products" class="btn-secondary">Continuar Comprando</a>
-                <a href="#contact" class="btn-primary">Finalizar Compra</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contato -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Vitrine 2025</h3>
-                    <p>Moda, Essência e Estilo em Alta Definição.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <p>contato@vitrine2025.com.br</p>
-                    <p>(11) 99999-9999</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Redes Sociais</h4>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Vitrine 2025. Todos os direitos reservados.</p>
-            </div>
+    <footer>
+        <p>&copy; 2025 Vitrine 2025 - Todos os direitos reservados</p>
+        <div class="redes">
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a>
         </div>
     </footer>
 </body>
