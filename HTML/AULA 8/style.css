@@ -1,0 +1,60 @@
+div.quadrado {
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+div#q1 {
+    background-color: aqua;
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, orange, rgb(70, 30, 83));
+    background-image: radial-gradient(circle, rgb(0, 200, 255), rgb(179, 158, 186));
+}
+
+div#q3 {
+    background-image: url('https://i.pinimg.com/736x/cb/b7/29/cbb729154b42b37b1344c4f07ece7a4f.jpg');
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+
+    background-size: contain;
+    background-size: auto;
+    background-size: 50px;
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-attachment: scroll;
+}
+
+body {
+    background-color: black;
+    background-image: url('https://i.pinimg.com/736x/95/b8/14/95b8147bf43b1f0a8674604703665dd2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background: black url(#) center center no-repeat fixed;
+}
+
+div#dentro {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+}
+
+div#fora {
+    height: 10vh;
+    background-color: red;
+    position: relative;
+}
